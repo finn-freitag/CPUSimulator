@@ -21,6 +21,8 @@ namespace CPUSimulator
         private void Logger_LogChanged(object sender, EventArgs e)
         {
             textBox1.Text = Logger.ToString();
+            textBox1.SelectionStart = textBox1.Text.Length;
+            textBox1.ScrollToCaret();
         }
 
         private void button1_Click(object sender, EventArgs e)
