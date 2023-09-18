@@ -261,7 +261,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.textBox17);
             this.splitContainer1.Panel2.Controls.Add(this.label16);
             this.splitContainer1.Size = new System.Drawing.Size(194, 304);
-            this.splitContainer1.SplitterDistance = 144;
+            this.splitContainer1.SplitterDistance = 150;
             this.splitContainer1.TabIndex = 13;
             // 
             // vScrollBar1
@@ -270,8 +270,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vScrollBar1.Location = new System.Drawing.Point(168, 0);
             this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(26, 144);
+            this.vScrollBar1.Size = new System.Drawing.Size(26, 150);
             this.vScrollBar1.TabIndex = 31;
+            this.vScrollBar1.ValueChanged += new System.EventHandler(this.vScrollBar1_ValueChanged);
             // 
             // label15
             // 
@@ -441,8 +442,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.vScrollBar2.Location = new System.Drawing.Point(168, 0);
             this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(26, 156);
+            this.vScrollBar2.Size = new System.Drawing.Size(26, 150);
             this.vScrollBar2.TabIndex = 32;
+            this.vScrollBar2.ValueChanged += new System.EventHandler(this.vScrollBar2_ValueChanged);
             // 
             // label24
             // 
