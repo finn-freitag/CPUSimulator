@@ -20,6 +20,26 @@ namespace CPUSimulator
             InitializeComponent();
         }
 
+        public void SetText(string text)
+        {
+            richTextBox1.Text = text;
+            foreach(Match match in Regex.Matches(text, "[a-z]+"))
+            {
+                richTextBox1.Select(match.Index, match.Length);
+                richTextBox1.SelectionColor = Color.Blue;
+            }
+            foreach(Match match in Regex.Matches(text, "[0-9]+"))
+            {
+                richTextBox1.Select(match.Index, match.Length);
+                richTextBox1.SelectionColor = Color.Green;
+            }
+        }
+
+        public string GetText()
+        {
+            return richTextBox1.Text;
+        }
+
         private void richTextBox1_TextChanged(object sender, EventArgs e)
         {
             string text = richTextBox1.Text;
