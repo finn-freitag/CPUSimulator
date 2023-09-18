@@ -69,5 +69,10 @@ namespace CPUSimulator
         {
             CreateMDIChild(new ControlPanel());
         }
+
+        private void settingsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateMDIChild(new SettingsView());
+        }
     }
 }
