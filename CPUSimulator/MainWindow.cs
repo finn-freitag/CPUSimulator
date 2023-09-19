@@ -29,7 +29,7 @@ namespace CPUSimulator
             InitializeComponent();
             this.IsMdiContainer = true;
             isMDI = Settings.isMDI;
-            CreateMDIChild(new Visualization());
+            visualization = CreateMDIChild(new Visualization());
         }
 
         private Form CreateMDIChild(Form form)
